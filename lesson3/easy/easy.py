@@ -10,10 +10,25 @@ def my_round(number, ndigits):
     x = ndigits+2
     if int(number[x])>=5:
         del number[x:]
+        c = int(number[x-1])+1
+        number[x-1]= str(c)
+        a = ''.join(number)
+        a = float(a)
+        return a
+    elif x>=9:
+        del number[x-1:]
+        c = int(number[x])+1
+        number[x]= str(c)
+        a = ''.join(number)
+        a = float(a)
+
+    else:
+        del number[x:]
         a = ''.join(number)
         a = float(a)
         return a
 
 
-a = my_round(2.1234567, 5)
+
+a = my_round(2.1234597, 6)
 print(a)
