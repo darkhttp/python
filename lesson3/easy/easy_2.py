@@ -17,3 +17,21 @@ if c == True:
     print('Счастливый билет')
 else:
     print('Несчастливый билет')
+print('-'*100)
+def lucky_ticket(c):
+    result=0
+    result1=0
+    for i in c[:3]:
+        result+=int(i)
+    for i in c[3:]:
+        result1+=int(i)
+    if result==result1:
+        return True
+    else:
+        return False
+c = list(str(input("Номер билета")))
+d = lucky_ticket(c)
+if d == True:
+    print('Счастливый билет')
+else:
+    print('Несчастливый билет')
