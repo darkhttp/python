@@ -4,7 +4,7 @@
 # Билет считается счастливым, если сумма его первых и последних цифр равны
 # !!!P.S.: функция не должна НИЧЕГО print'ить
 
-
+#1-й вариант
 def lucky_ticket(a,b,c,d,e,f):
     if a+b+c==d+e+f:
         return True
@@ -17,7 +17,9 @@ if c == True:
     print('Счастливый билет')
 else:
     print('Несчастливый билет')
+
 print('-'*100)
+#2-й вариант
 def lucky_ticket(c):
     result=0
     result1=0
