@@ -18,19 +18,15 @@ pattern = '[a-z]{2}([A-Z])[A-Z]{2}'
 print(re.findall(pattern,line_2))
 a = [a for a in range(len(line_2)) if(line_2[a].isupper())]
 c = [a for a in range(len(line_2)) if(line_2[a].islower())]
+
+i= 0
+b = len(c) - 1
 l = []
-i = 0
-b = len(a) - 1
-k = len(c)-1
+while i < b:
+       i += 1
+       if (((c[i+1] - c[i])==1 and a[i+1] - a[i])==1 ):
 
-
-while i < k:
-       i+=1
-       if (c[i + 1] - c[i]) == 1:
-              while k < b:
-                     k+=1
-                     if a[k + 1] - a[i] == 1:
-                            x = (line[a[i-k]], line[a[i-k]])
-                            l.append(x)
-
+              x = (line_2[a[3]])
+              l.append(x)
+              i += 1
 print(l)
