@@ -29,9 +29,9 @@ for i in b:
     old = i
     c[-1].append(i)
 print(c)
-lmax = max(len(i) for i in c)
-print (lmax)
-for i in [_ for _ in c if len(_) == lmax]:
+len_max = max(len(i) for i in c)
+print (len_max)
+for i in [_ for _ in c if len(_) == len_max]:
     print (i)
 
 #2 вариант
