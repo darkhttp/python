@@ -33,7 +33,7 @@ while True:
                 print("Невозможно перейти")
         elif a == '2':
             easy_2.directoria()
-        elif a== '3':
+        elif a == '3':
             c = input("Какую папку удалить?:")
             try:
                 os.removedirs(c)
