@@ -49,7 +49,7 @@ class Ravnoboc:
         else:
            return "Трапеция неравнобоковая, нельзя вычислить площадь"
 
-        return s
+
 trap = Ravnoboc(1,1,4,7,8,7,11,1)
 print(trap.proverka())
 print("Cтороны:",trap.storon())

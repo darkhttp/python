@@ -17,8 +17,7 @@ class Treyg:
         CD = self.x3-self.x1
         p=(AB+BC+CD)/2
         pl = sqrt(p*((p-AB)*(p-BC)*(p-CD)))
-        #p=2
-        #s = math.sqrt(p(p-self.a)*(p-self.b)*(p-self.c))
+
         return pl
     def perimetr(self):
         AB = sqrt(((self.x2 - self.x1) ** 2) + ((self.y2 - self.y1) ** 2))
